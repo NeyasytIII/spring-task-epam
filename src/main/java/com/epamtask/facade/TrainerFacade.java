@@ -1,0 +1,14 @@
+package com.epamtask.facade;
+
+import com.epamtask.model.Trainer;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface TrainerFacade {
+    void createTrainer(Long userId, String firstName, String lastName, String specialization);
+    void updateTrainer(Trainer trainer);
+    Optional<Trainer> getTrainerById(Long id);
+    Optional<Trainer> getTrainerByUsername(String username);
+    List<Trainer> getAllTrainers();
+}
