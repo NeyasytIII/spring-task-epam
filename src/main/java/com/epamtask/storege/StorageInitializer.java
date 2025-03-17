@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-@PropertySource("classpath:application.properties")
 @Component
 public class StorageInitializer {
 
